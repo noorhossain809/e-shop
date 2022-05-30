@@ -1,10 +1,15 @@
+
 import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
+import AppRouter from './AppRouter';
+import Header from './components/common/Header';
 function App() {
   return (
-    <div className="">
-      <h2>Hello E-Shop</h2>
-      <h3>Hello</h3>
-    </div>
+    <BrowserRouter>
+    <Header />
+      <AppRouter />
+      
+    </BrowserRouter>
   );
 }
 
