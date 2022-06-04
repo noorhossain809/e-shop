@@ -1,5 +1,7 @@
-import Footer from 'components/common/Footer';
+
 import Banner from 'components/home/Banner';
+import ExampleProducts from 'components/home/ExampleProducts/ExampleProducts';
+
 import Products from 'components/home/Products';
 import { IProduct } from 'Modal/types';
 import React, { useEffect, useState } from 'react';
@@ -16,7 +18,7 @@ const Home = () => {
     <div>
       <Banner />
       <Products products={products} />
-      <Footer />
+      <ExampleProducts />
     </div>
   );
 };
